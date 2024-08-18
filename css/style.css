@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    background-color: black;
+}
+
+/* estilos de mobile */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+}
+
+header div{
+    display: flex;
+}
+
+header nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: beige;
+}
+
+/* main */
+
+main{
+    padding: 10px;
+}
+main h1{
+    text-align: left;
+    margin-top: 25px;
+    color: brown;
+}
+
+main .div-main-principal{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main .div-main-principal img{
+    width: 50%
+}
+
+main .div-main-principal p{
+    text-align: center;
+    color: brown;
+}
+
+
+/* footer */
+
+footer{
+    background-color: brown;
+}
+
+footer ul{
+    color: beige;
+}
+
+footer ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: beige;
+}
+
+.menu-footer a{
+    text-decoration: none;
+    color: beige;
+}
+
+footer ul li img{
+    width: fit-content;
+    height: 40px;
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px){
+    header{
+        justify-content: space-around;
+    }
+    main .div-main-principal{
+        flex-direction: row;
+    }
+    main .galeria-de-mates{
+        align-items: center;
+    }
+    main .galeria-de-mates img{
+        width: 50%;
+    }
+}
+/* pagina "mates" */
+
+main h1{
+    text-align: center;
+}
+
+main .galeria-de-mates{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
